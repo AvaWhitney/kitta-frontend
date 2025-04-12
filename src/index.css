@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes backgroundScroll {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-animate {
+  animation: backgroundScroll 98s linear infinite;
+  background-size: 100% 100%;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+

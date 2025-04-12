@@ -1,3 +1,2 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /kitta-archive-08a9e3d3d2d-download

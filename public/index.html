@@ -4,40 +4,59 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="description" content="Cute, chaotic, and emotionally unstable. Kitta is your AI-powered agent of chaos with questionable advice, no emotional stability, and way too much confidence. She has zero credentials, but she's ready to give you life advice"/>
+    <meta name="author" content="Ava Whitney" />
+    <meta property="og:image" content="https://kitta.modemmuse.com/og-preview.png" />
+    <meta property="og:title" content="Kitta" />
+    <meta property="og:description" content="She's delusional. She's dramatic. She's dishing out hot takes like it's her job. Kitta gives advice no one asked for—but you’ll probably take it anyway."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kitta.modemmuse.com/" />   
+    <meta property="og:site_name" content="Modem Muse" />
+    <link rel="canonical" href="https://kitta.modemmuse.com/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Kitta | Modem Muse</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Kitta",
+        "description": "Kitta is your AI-powered agent of chaos with zero credentials, but she is ready to give you life advice anyway.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "All",
+        "url": "https://kitta.modemmuse.com",
+        "creator": {
+          "@type": "Person",
+          "name": "Ava Whitney"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD"
+        }
+      }
+      </script>
+      
   </head>
+  
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHD101RGPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LHD101RGPH');
+</script>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
