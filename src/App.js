@@ -53,6 +53,7 @@ function App() {
       });
   
       const data = await res.json();
+      console.log("🧠 Kitta's response:", data); /* FIX ME */
       const botReply = { role: "kitta", content: data.reply };
       setChatHistory([...newHistory, botReply]);
     } catch (error) {
