@@ -34,22 +34,22 @@ function App() {
   const sendMessage = async () => {
     if (!message.trim()) return;
   
-    const userMessage = message; // Save the current message before clearing it
+    const userMessage = message; 
     const randomTyping = typingMessages[Math.floor(Math.random() * typingMessages.length)];
     setTypingMessage(randomTyping);
     setIsTyping(true);
 
     const newHistory = [...chatHistory, { role: "user", content: userMessage }];
     setChatHistory(newHistory);
-    setMessage(""); // Now it's okay to clear it
+    setMessage(""); 
   
     try {
-      const res = await fetch("https://kitta-backend.onrender.com", {
+      const res = await fetch("https://kitta-backend.onrender.com/kitta", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ message: userMessage }), // Use saved value
+        body: JSON.stringify({ message: userMessage }), 
       });
   
       const data = await res.json();
