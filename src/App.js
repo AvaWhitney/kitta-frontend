@@ -52,8 +52,7 @@ function App() {
         body: JSON.stringify({ message: userMessage }), 
       });
   
-      const data = await res.json();
-      console.log("🧠 Kitta's response:", data); /* FIX ME */
+      const data = await res.json();      
       const botReply = { role: "kitta", content: data.reply };
       setChatHistory([...newHistory, botReply]);
     } catch (error) {
@@ -91,8 +90,8 @@ function App() {
         {menuOpen && (
           <div className="mt-2 bg-white/50 backdrop-blur-lg text-purple-800 rounded-xl shadow-xl p-4">
             <a href="https://modemmuse.com" className="block px-3 py-1 mb-1 rounded-md hover:shadow-lg transition duration-200">Mothership</a>
-            <a href="https://kitta.modemmuse.com" className="block px-3 py-1 mb-1 rounded-md hover:shadow-lg transition duration-200">Kitta</a>
-            <a href="https://colorcoded.modemmuse.com" className="block px-3 py-1 mb-1 rounded-md hover:shadow-lg transition duration-200">Quizzes</a>
+            <a href="https://horoscope.modemmuse.com" className="block px-3 py-1 mb-1 rounded-md hover:shadow-lg transition duration-200">Horoscopes</a>
+            <a href="https://modemmuse.com/quizzes" className="block px-3 py-1 mb-1 rounded-md hover:shadow-lg transition duration-200">Quizzes</a>
             <a href="https://modemmuse.com/muselabs" className="block px-3 py-1 mb-1 rounded-md hover:shadow-lg transition duration-200">Muse Labs</a>
             <a href="https://modemmuse.com/contact" className="block px-3 py-1 mb-1 rounded-md hover:shadow-lg transition duration-200">Contact</a>
           </div>
@@ -170,9 +169,9 @@ function App() {
                }
             }}
             placeholder="Ask me for advice... but don’t blame me later 💅"
-            className="flex-grow p-2 rounded-xl border text-sm resize-none mr-2"
+            className="flex-grow p-2 rounded-xl border text-base resize-none mr-2"
             style={{ 
-              minHeight: "48px",
+              minHeight: "60px",
               maxHeight: "120px" 
             }}
          ></textarea>
